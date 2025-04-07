@@ -65,7 +65,11 @@ export const Prueba = () => {
             </form>
             <ul>
                 {/* {data.map((el, i) => <li key={i}>{el}</li>)} */}
-                {data.map((el, i) => <li key={i}>{el.task}<span onClick={() => handleClick(i)} className="bg-danger p-1">X</span></li>)}
+                {data.map((el, i) => 
+                <li key={i}>{el.task}
+                    <span onClick={() => handleClick(i)} className="bg-danger p-1">X</span>
+                </li>
+                )}
 
             </ul>
         </div>
