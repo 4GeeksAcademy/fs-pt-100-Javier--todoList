@@ -2,25 +2,22 @@ import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import { Formulario } from "./formulario.jsx";
+import { Registro } from "./registro.jsx";
+import { Prueba } from "./prueba.jsx";
 
 //create your first component
 const Home = () => {
 	return (
 		<div className="text-center">
-            
+			<p className="fs-1">useEffect con forms</p>
+			<Formulario />
+			<h3>Registro</h3>
+			<Registro />
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+
+			<h3>Prueba aqui</h3>
+			<Prueba/>
 		</div>
 	);
 };
